@@ -1,8 +1,10 @@
-/liu/
-/surprise/logs/
-/SASRec/logs/
-/SASRec/__pycache__/
+liu/
+surprise/logs/
+SASRec/logs/
+SASRec/__pycache__/
+Neu-Review-Rec/checkpoints/
+Neu-Review-Rec/logs/
 
-/NARRE-master/
-/NCF-master/
-/CARL-master/
+NARRE-master/
+NCF-master/
+CARL-master/
