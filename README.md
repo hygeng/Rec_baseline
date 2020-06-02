@@ -1,5 +1,5 @@
 # recommendations
-Recommendations implementation collections(Ongoing)
+Recommendation baseline implementations (Ongoing)
 
 # dataset    
 dataset colleections: https://github.com/daicoolb/RecommenderSystem-DataSet    
