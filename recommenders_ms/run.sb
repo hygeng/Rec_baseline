@@ -1,0 +1,10 @@
+#!/bin/bash
+#SBATCH -o "logs/0603_ciao_%j.out"
+#SBATCH -J NCF
+#SBATCH -p gpu
+#SBATCH -N 1
+#SBATCH -t 10:00:00
+#SBATCH --gres=gpu:1
+module load cuda/9.0
+module load cudnn/7.3.0
+CUDA_LAUNCH_BLOCKING=1 ~/.conda/envs/my/bin/python -u /cluster/home/it_stu110/proj/Rec_baseline/recommenders_ms/practice/NCF.py

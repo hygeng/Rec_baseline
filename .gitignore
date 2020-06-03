@@ -8,6 +8,8 @@ surprise/
 PMF/__pycache__/
 PMF/processed_data/
 PMF/data/
+NFM-pytorch/
+
 
 NARRE-master/
 NCF-master/
