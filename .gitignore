@@ -5,7 +5,9 @@ SASRec/__pycache__/
 Neu-Review-Rec/checkpoints/
 Neu-Review-Rec/logs/
 surprise/
-
+PMF/__pycache__/
+PMF/processed_data/
+PMF/data/
 
 NARRE-master/
 NCF-master/
