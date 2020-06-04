@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH -o "logs/0604_PMF_yelp_ON_%j.out"
+#SBATCH -o "logs/0605_PMF_yelp_ON_%j.out"
 #SBATCH -J hisr
 #SBATCH -p gpu
 #SBATCH -N 1
