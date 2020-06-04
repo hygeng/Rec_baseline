@@ -443,3 +443,6 @@ traning iteration: 437 ,loss: 230006.514351, vali_rmse: 1.192479
 traning iteration: 438 ,loss: 229712.992980, vali_rmse: 1.191976
 traning iteration: 439 ,loss: 229420.979786, vali_rmse: 1.191478
 traning iteration: 440 ,loss: 229130.457570, vali_rmse: 1.190982
+traning iteration: 441 ,loss: 228841.409324, vali_rmse: 1.190490
+traning iteration: 442 ,loss: 228553.818234, vali_rmse: 1.190000
+traning iteration: 443 ,loss: 228267.667674, vali_rmse: 1.189515

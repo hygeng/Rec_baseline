@@ -100,3 +100,4 @@ pciBusID: 0000:c1:00.0
 2020-06-04 19:16:01.886221: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x7f0f4b6aa810 executing computations on platform CUDA. Devices:
 2020-06-04 19:16:01.886625: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): GeForce GTX 1080 Ti, Compute Capability 6.1
 start training data
+2020-06-04 19:19:19.059413: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcublas.so.10
