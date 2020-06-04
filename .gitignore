@@ -8,6 +8,10 @@ surprise/
 PMF/__pycache__/
 PMF/processed_data/
 PMF/data/
+PMF/logs
+NFM-pytorch/
+recommenders_ms/logs/*
+
 
 NARRE-master/
 NCF-master/

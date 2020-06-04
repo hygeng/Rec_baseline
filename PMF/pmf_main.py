@@ -6,7 +6,7 @@ from tqdm import tqdm
 # print('PMF Recommendation Model Example')
 
 # choose dataset name and load dataset, 'ml-1m', 'ml-10m'
-dataset = 'ciao'
+dataset = 'yelp_ON'
 processed_data_path = os.path.join(os.getcwd(), 'processed_data', dataset)
 user_id_index = pickle.load(open(os.path.join(processed_data_path, 'user_id_index.pkl'), 'rb'))
 item_id_index = pickle.load(open(os.path.join(processed_data_path, 'business_id_index.pkl'), 'rb'))
@@ -33,7 +33,7 @@ lambda_alpha = 0.01
 lambda_beta = 0.01
 latent_size = 20
 lr = 3e-5
-iters = 10
+iters = 1000
 model = PMF(R=R, lambda_alpha=lambda_alpha, lambda_beta=lambda_beta, latent_size=latent_size, momuntum=0.9, lr=lr, iters=iters, seed=1)
 print('parameters are:ratio={:f}, reg_u={:f}, reg_v={:f}, latent_size={:d}, lr={:f}, iters={:d}'.format(ratio, lambda_alpha, lambda_beta, latent_size,lr, iters))
 U, V, train_loss_list, vali_rmse_list = model.train(train_data=train_data, vali_data=vali_data)

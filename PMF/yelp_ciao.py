@@ -4,11 +4,11 @@ import numpy as np
 import pandas as pd
 from tqdm import tqdm
 # choose dataset to process
-# dataset = 'yelp_ON'
-# raw_data_path = "/cluster/home/it_stu110/data/yelp/state/ON_reindex.csv"
+dataset = 'yelp_ON'
+raw_data_path = "/cluster/home/it_stu110/data/yelp/state/ON_reindex.csv"
 
-dataset = "ciao"
-raw_data_path = "/cluster/home/it_stu110/data/ciao/Ciao/done/ciao.csv"
+# dataset = "ciao"
+# raw_data_path = "/cluster/home/it_stu110/data/ciao/Ciao/done/ciao.csv"
 
 
 processed_data_path = os.path.join(os.getcwd(), 'processed_data', dataset)
