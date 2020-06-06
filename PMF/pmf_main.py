@@ -33,7 +33,7 @@ lambda_alpha = 0.01
 lambda_beta = 0.01
 latent_size = 20
 lr = 3e-5
-iters = 500
+iters = 1000
 model = PMF(R=R, lambda_alpha=lambda_alpha, lambda_beta=lambda_beta, latent_size=latent_size, momuntum=0.9, lr=lr, iters=iters, seed=1)
 print('parameters are:ratio={:f}, reg_u={:f}, reg_v={:f}, latent_size={:d}, lr={:f}, iters={:d}'.format(ratio, lambda_alpha, lambda_beta, latent_size,lr, iters))
 U, V, train_loss_list, vali_rmse_list = model.train(train_data=train_data, vali_data=vali_data)
@@ -59,7 +59,7 @@ for batch_idx in tqdm(range(num_batches)):
     batch_users = all_users[ start : end ]
     batch_len = len(batch_users)
     # array_users  = df_users - batch_idx * batch_size
-    batch_test_data = test_data[np.logical_or.reduce([test_data[:,0]==x for x in batch_users])]
+    batch_test_data = test_data[np.logical_or.reduce([test_data[:,0]==x for x in batch_users])].astype('int')
 
     true_batch = np.zeros((batch_len, n_items))
     true_batch[batch_test_data[:,0] - start, batch_test_data[:,1]] = batch_test_data[:,2]

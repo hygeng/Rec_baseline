@@ -1,6 +1,6 @@
 import sys
 import os
-print("adding: ", os.getcwd())
+print("adding: ", os.getcwd(), " to path")
 sys.path.append(os.getcwd())
 import time
 import pandas as pd
@@ -30,7 +30,7 @@ EPOCHS = 50
 BATCH_SIZE = 128
 
 SEED = 42
-dataset = "ciao"
+dataset = "yelp_ON"
 if dataset =="ciao":
     data_path = "/cluster/home/it_stu110/data/ciao/ciao_with_rating_timestamp/rating_with_timestamp.mat"
     import scipy.io as scio

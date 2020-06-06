@@ -11,6 +11,10 @@ PMF/data/
 PMF/logs
 NFM-pytorch/
 recommenders_ms/logs/*
+AARM/logs/*
+AARM/data/
+AARM/temp/
+AARM/src/__pycache__/
 
 
 NARRE-master/
