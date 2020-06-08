@@ -1,9 +1,9 @@
 #!/bin/bash
-#SBATCH -o "logs/0310_lr001_%j.out"
-#SBATCH -J Jobname train
+#SBATCH -o "logs/0608_beauty_%j.out"
+#SBATCH -J AARM
 #SBATCH -p gpu
 #SBATCH -N 1
 #SBATCH -t 10:00:00
 #SBATCH --gres=gpu:1
 module load cuda/10.0
-python -u src/running.py --num_epoch 300 --productName Beauty --is_l2_regular 1 --lamda_l2 0.1 --is_out_l2 0 --dropout 0.4 --learning_rate 0.001 --num_aspect_factor 128 --num_mf_factor 128
+~/.conda/envs/my/bin/python -u src/running.py --num_epoch 300 --productName Beauty --is_l2_regular 1 --lamda_l2 0.1 --is_out_l2 0 --dropout 0.4 --learning_rate 0.001 --num_aspect_factor 128 --num_mf_factor 128
