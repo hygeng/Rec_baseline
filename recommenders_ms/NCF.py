@@ -7,6 +7,7 @@ import pandas as pd
 import tensorflow as tf
 import numpy as np
 from tqdm import tqdm
+import gc
 
 from reco_utils.recommender.ncf.ncf_singlenode import NCF
 from reco_utils.recommender.ncf.dataset import Dataset as NCFDataset
@@ -27,7 +28,7 @@ print("Tensorflow version: {}".format(tf.__version__))
 TOP_K = 10
 
 # Model parameters
-EPOCHS = 50
+EPOCHS = 50  
 BATCH_SIZE = 32
 
 SEED = 42
@@ -154,6 +155,11 @@ for batch_idx in tqdm(range(num_batches)):
     ndcg.append(eval_ndcg)
     hr.append(eval_precision)
     recall.append(eval_recall)
+    del batch_train
+    del batch_predictions
+    del batch_merged
+    del batch_test
+    gc.collect()
 
 
 print(#"MAP:\t%f" % eval_map,
