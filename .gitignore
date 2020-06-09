@@ -2,8 +2,6 @@ liu/
 surprise/logs/
 SASRec/logs/
 SASRec/__pycache__/
-Neu-Review-Rec/checkpoints/
-Neu-Review-Rec/logs/
 surprise/
 PMF/__pycache__/
 PMF/processed_data/
