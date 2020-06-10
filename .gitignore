@@ -9,6 +9,7 @@ PMF/data/
 PMF/logs
 NFM-pytorch/
 recommenders_ms/logs/*
+recommenders_ms/
 AARM/logs/*
 AARM/data/
 AARM/temp/
