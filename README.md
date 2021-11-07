@@ -1,6 +1,9 @@
 # recommendations
 Recommendation baseline implementations (Ongoing)
 
+# branch: VAECF
+
+
 # dataset    
 dataset collections: https://github.com/daicoolb/RecommenderSystem-DataSet    
 Yelp: https://www.yelp.com/dataset  
